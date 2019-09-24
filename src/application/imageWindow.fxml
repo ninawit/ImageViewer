@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ImageWindowController">
+   <top>
+      <MenuBar fx:id="menuBar" prefHeight="57.0" prefWidth="900.0" style="-fx-background-image: url(/application/menu.jpg)" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="fileMenu" mnemonicParsing="false" onAction="#fileMenu" text="File">
+            <items>
+              <MenuItem fx:id="loadButton" mnemonicParsing="false" onAction="#loadButton" text="Load Image" />
+                  <MenuItem fx:id="closeButton" mnemonicParsing="false" onAction="#closeButton" text="Close Image" />
+            </items>
+          </Menu>
+          <Menu fx:id="editMenu" mnemonicParsing="false" onAction="#editMenu" text="Edit">
+            <items>
+              <MenuItem fx:id="grayButton" mnemonicParsing="false" onAction="#grayButton" text="Gray" />
+                  <MenuItem fx:id="rgbButton" mnemonicParsing="false" onAction="#rgbButton" text="RGB" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ImageView fx:id="imageView" fitHeight="514.0" fitWidth="788.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

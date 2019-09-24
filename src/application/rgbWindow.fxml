@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RGBWindowController">
+   <center>
+      <ImageView fx:id="imageView" fitHeight="514.0" fitWidth="788.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="59.0" prefWidth="800.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="redButton" mnemonicParsing="false" onAction="#redButton" style="-fx-background-color: #d13e40#d13e40;" text="Red" />
+            <Button fx:id="greenButton" mnemonicParsing="false" onAction="#greenButton" prefHeight="21.0" prefWidth="59.0" style="-fx-background-color: #40bc44#40bc44;" text="Green" />
+            <Button fx:id="blueButton" mnemonicParsing="false" onAction="#blueButton" style="-fx-background-color: #1685e0#1685e0;" text="Blue" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <MenuBar fx:id="menuBar" style="-fx-background-image: url(/application/menu.jpg)" prefHeight="57.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
